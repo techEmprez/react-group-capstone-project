@@ -1,5 +1,6 @@
 import React from 'react'
 import NavLink from './NavLink';
+import Logo from '../assets/capstone';
 
  const Header = () => {
   return (
