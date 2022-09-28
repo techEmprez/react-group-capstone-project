@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import uuid from 'react-uuid';
 import { useSelector, useDispatch } from 'react-redux';
 import MissionInfo from './MissionInfo';
-import MissionsData from './MissionsData';
+// import MissionsData from './MissionsData';
 import { fetchMissionsList } from '../redux/missions/mission';
 
 const Missions = () => {
@@ -17,7 +17,7 @@ const Missions = () => {
 
   console.log(missionsList);
 
-  const renderMissionsList = MissionsData.map((mission) => (
+  const renderMissionsList = missionsList.map((mission) => (
     <MissionInfo
       key={uuid()}
       name={mission.mission_name}
