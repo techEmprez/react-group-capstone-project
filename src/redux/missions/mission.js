@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 // Actions
 const FETCH_MISSIONS = 'spaceTravelers/missions/missions/FETCH_MISSIONS';
 const JOIN_MISSIONS = 'spaceTravelers/missions/missions/JOIN_MISSIONS';
-const LEAVE_MISSIONS = 'spaceTravelers/missions/missions/JOIN_MISSIONS';
+const LEAVE_MISSIONS = 'spaceTravelers/missions/missions/LEAVE_MISSIONS';
 
 // Fetch Missions Api
 const fetchApi = 'https://api.spacexdata.com/v3/missions';
