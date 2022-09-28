@@ -3,6 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 // Actions
 const FETCH_MISSIONS = 'spaceTravelers/missions/missions/FETCH_MISSIONS';
 const JOIN_MISSIONS = 'spaceTravelers/missions/missions/JOIN_MISSIONS';
+const LEAVE_MISSIONS = 'spaceTravelers/missions/missions/JOIN_MISSIONS';
 
 // Fetch Missions Api
 const fetchApi = 'https://api.spacexdata.com/v3/missions';
@@ -36,6 +37,11 @@ export const joinMission = (id) => ({
   payload: id,
 });
 
+export const leaveMission = (id) => ({
+  type: LEAVE_MISSIONS,
+  payload: id,
+});
+
 const missionReducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_MISSIONS:
@@ -48,6 +54,18 @@ const missionReducer = (state = initialState, action) => {
       const newState = state.missionsList.map((mission) => {
         if (mission.mission_id === action.payload) {
           return { ...mission, isMissionJoined: !mission.isMissionJoined };
+        }
+        return mission;
+      });
+      return {
+        ...state,
+        missionsList: newState,
+      };
+    }
+    case LEAVE_MISSIONS: {
+      const newState = state.missionsList.map((mission) => {
+        if (mission.mission_id === action.payload) {
+          return { ...mission, isMissionJoined: mission.isMissionJoined };
         }
         return mission;
       });

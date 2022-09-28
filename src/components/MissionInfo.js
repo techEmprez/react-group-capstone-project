@@ -13,6 +13,7 @@ const MissionInfo = (props) => {
     console.log('Mission Joined');
   };
 
+
   return (
     <div className="mission-container">
       <table>
