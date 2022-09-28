@@ -1,44 +1,59 @@
-/* eslint-disable no-console */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
-import React from 'react';
-import { useDispatch } from 'react-redux';
+/* eslint-disable no-console */
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from 'react';
+import uuid from 'react-uuid';
+import { useSelector, useDispatch } from 'react-redux';
 import '../App.css';
-import { joinMission, leaveMission } from '../redux/missions/mission';
+import { fetchMissionsList, joinMission } from '../redux/missions/mission';
 
 const MissionInfo = (props) => {
+  const { missionsList } = useSelector((state) => state.allMissions);
   const dispatch = useDispatch();
-  const handleJoinMission = () => {
-    dispatch(joinMission());
+
+  useEffect(() => {
+    dispatch(fetchMissionsList());
+  }, []);
+
+  console.log(missionsList);
+
+  const handleJoinMission = (event) => {
+    event.preventDefault();
+    dispatch(joinMission(event.target.parentElement.parentElement.id));
     console.log('Mission Joined');
-  };
-  const handleLeaveMission = () => {
-    dispatch(leaveMission());
-    console.log('Mission Left');
   };
 
   return (
     <div className="mission-container">
-      <table>
-        <tbody>
-          <tr className="mission-data">
-            <td className="mission1Name">{props.name}</td>
-            <td className="mission1Desc">{props.description}</td>
-            <td className="mission1Status">{props.status}</td>
-            <td className="mission1Btn">
-              <button type="button" className="btn" onClick={handleJoinMission}>Join Mission</button>
-              <button type="button" className="btn" onClick={handleLeaveMission}>Leave Mission</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
+      { missionsList.map((mission) => (
+        <table key={uuid()}>
+          <tbody>
+            <tr className="mission-data" id={mission.mission_id}>
+              <td className="mission1Name">{mission.mission_name}</td>
+              <td className="mission1Desc">{mission.description}</td>
+              <td className="mission1Status">
+                { mission.isMissionJoined
+                  ? <div>{props.joinedStatus}</div>
+                  : <div>{props.notJoinedStatus}</div>}
+              </td>
+              <td className="mission1Btn">
+                { mission.isMissionJoined
+                  ? <button type="button" className="btn" onClick={handleJoinMission}>Leave Mission</button>
+                  : <button type="button" className="btn" onClick={handleJoinMission}>Join Mission</button>}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      ))}
     </div>
+
   );
 };
 
 MissionInfo.defaultProps = {
-  status: 'NOT A MEMBER',
+  notJoinedStatus: 'NOT A MEMBER',
+  joinedStatus: 'ACTIVE MEMBER',
 };
 
 export default MissionInfo;

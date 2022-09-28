@@ -22,6 +22,7 @@ export const fetchMissionsList = createAsyncThunk(
       return {
         mission_id: key,
         ...mission,
+        isMissionJoined: false,
       };
     });
     dispatch({
@@ -65,7 +66,7 @@ const missionReducer = (state = initialState, action) => {
     case LEAVE_MISSIONS: {
       const newState = state.missionsList.map((mission) => {
         if (mission.mission_id === action.payload) {
-          return { ...mission, isMissionJoined: mission.isMissionJoined };
+          return { ...mission, isMissionJoined: true };
         }
         return mission;
       });
