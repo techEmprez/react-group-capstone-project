@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #07f;
+}
+
+.navItem:active {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.navLogo {
+  height: 100px;
+  width: 100px;
+  margin-left: -15rem;
+  margin-top: 1rem;
+}
+
+.pageTitle {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 4rem;
+  margin-top: 4rem;
+}
