@@ -13,7 +13,9 @@ const MissionInfo = (props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchMissionsList());
+    if (!missionsList.length) {
+      dispatch(fetchMissionsList());
+    }
   }, []);
 
   console.log(missionsList);
