@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { Button } from 'react-bootstrap';
+import { Button, Badge } from 'react-bootstrap';
 import { reserveRocket } from '../../redux/rockets/rocketSlice';
 
 const RocketItem = (props) => {
@@ -29,15 +29,18 @@ const RocketItem = (props) => {
             <Button
               id={id}
               type="button"
+              className="glow-on-hover"
               variant="primary"
               onClick={handleClick}
             >
               Reserve Rocket
             </Button>
+
           </>
         ) : (
           <>
             <p>
+              <Badge className="reserved">Reserved</Badge>
               {description}
             </p>
             <Button
@@ -48,7 +51,6 @@ const RocketItem = (props) => {
             >
               Cancel reservation
             </Button>
-
           </>
         )}
       </div>
