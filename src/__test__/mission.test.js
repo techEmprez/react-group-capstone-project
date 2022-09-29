@@ -3,8 +3,8 @@ import TestRenderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Missions from '../components/Missions';
-import Header from '../components/Header';
+import Missions from '../components/Missions/Missions';
+import Header from '../components/Missions/Header';
 import store from '../redux/configureStore';
 
 test('Unit Test Check For Mission Component', () => {

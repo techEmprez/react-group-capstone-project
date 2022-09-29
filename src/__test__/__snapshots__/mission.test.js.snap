@@ -60,8 +60,9 @@ exports[`Test Header Component Test Header Component renders correctly 1`] = `
 
 exports[`Test Missions component Test Mission Component Renders Correctly 1`] = `
 <div>
+  <hr />
   <table
-    className="mission-table"
+    className="mission-table-head"
   >
     <tbody>
       <tr
