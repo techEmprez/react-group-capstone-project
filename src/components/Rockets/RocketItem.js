@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Badge } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
+import { Button, Badge } from 'react-bootstrap';
 import { reserveRocket } from '../../redux/rockets/rocketSlice';
 import './Rocket.css';
 
@@ -27,16 +27,22 @@ const RocketItem = (props) => {
         {!reserved ? (
           <>
             <p>{description}</p>
-           
-
+            <Button
+              id={id}
+              type="button"
+              variant="primary"
+              onClick={handleClick}
+            >
+              Reserve Rocket
+            </Button>
           </>
         ) : (
           <>
             <p>
-             
+              <Badge className="reserved">Reserved</Badge>
               {description}
             </p>
-           
+
           </>
         )}
       </div>
