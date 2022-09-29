@@ -6,7 +6,7 @@ const NavLink = () => {
    <nav>
     <ul>
        <li>
-        <Link to="/" >Rockets</Link>
+        <Link href="#rockets" style={activeLink} to="/" >Rockets</Link>
         </li>
        <li>
        <Link to="/missions" >Missions</Link>
@@ -19,5 +19,8 @@ const NavLink = () => {
    </nav>
   )
 }
+<Nav.Link href="#rockets">
+              <NavLink style={activeLink} className="text-primary link" to="/">Rockets</NavLink>
+            </Nav.Link>
 
 export default NavLink
