@@ -41,7 +41,26 @@ a {
   margin-top: 4rem;
 }
 
+.mission-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table-head,
+.mission-data,
+.mission-head {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.mission1 {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
 /* styling for rockets */
+
 .rocket-img {
   width: 250px;
   height: 200px;
