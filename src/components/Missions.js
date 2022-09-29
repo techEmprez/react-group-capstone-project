@@ -1,21 +1,21 @@
 /* eslint-disable no-console */
 /* eslint-disable react-hooks/exhaustive-deps */
-// import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import uuid from 'react-uuid';
-// import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import MissionInfo from './MissionInfo';
 import MissionsData from './MissionsData';
-// import { fetchMissionsList } from '../redux/missions/mission';
+import { fetchMissionsList } from '../redux/missions/mission';
 
 const Missions = () => {
-  // const { missionsList } = useSelector((state) => state.allMissions);
-  // const dispatch = useDispatch();
+  const { missionsList } = useSelector((state) => state.allMissions);
+  const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(fetchMissionsList());
-  // }, []);
+  useEffect(() => {
+    dispatch(fetchMissionsList());
+  }, []);
 
-  // console.log(missionsList);
+  console.log(missionsList);
 
   const renderMissionsList = MissionsData.map((mission) => (
     <MissionInfo
