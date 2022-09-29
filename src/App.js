@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
 import NavLink from './components/NavLink';
-import RocketContainer from './Components/Rocket/RocketContainer';
+import RocketContainer from './components/Rockets/RocketContainer';
 
 
 const App = () => {
