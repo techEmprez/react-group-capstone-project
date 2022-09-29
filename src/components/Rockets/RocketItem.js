@@ -22,7 +22,7 @@ const RocketItem = (props) => {
     <li className="d-flex my-3 align-items-center" id={id}>
       <img src={images} alt="rocket flickr" className="rocket-img" />
       <div className="content px-3 py-5">
-        <h3>{ name }</h3>
+        <h4>{ name }</h4>
         {!reserved ? (
           <>
             <p>{description}</p>
