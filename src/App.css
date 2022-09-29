@@ -9,6 +9,7 @@ li {
 
 hr {
   margin-top: 1rem;
+  color: gray;
   width: 97%;
 }
 
@@ -173,7 +174,7 @@ a {
 }
 
 .myMissions {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
   margin-left: 3.5rem;
   font-family: 'Roboto', sans-serif;
   font-size: 28px;

@@ -12,6 +12,7 @@ const MyProfile = () => {
 
   return (
     <div className="my-profile">
+      <hr />
       { filterJoinedMissions.length === 0 ? <h4 className="myMissions">You Have No Missions Added</h4> : <h4 className="myMissions">My Missions</h4> }
       <table className="myMissionRow">
         <tbody>
