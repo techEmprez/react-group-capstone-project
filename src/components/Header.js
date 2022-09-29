@@ -1,6 +1,5 @@
 import React from 'react';
-import NavLink from './NavLink';
-import Logo from '../assets/capstone';
+import Logo from '../assets/capstone.png';
 
 const Header = () => (
   <div>
