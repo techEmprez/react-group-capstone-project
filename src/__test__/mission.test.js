@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Missions from '../components/Missions/Missions';
 import Header from '../components/Missions/Header';
-import store from '../redux/configureStore';
+import store from '../redux/store';
 
 test('Unit Test Check For Mission Component', () => {
   render(<Provider store={store}><Missions /></Provider>);
