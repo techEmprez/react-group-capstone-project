@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import RocketList from './RocketList';
 import { fetchRocketsData } from '../../redux/rockets/rocketSlice';
+import '../../App.css';
 
 // to save the API call that was reserved, we use a global variable to keep the API call
 let saveReservedAPI = false;
