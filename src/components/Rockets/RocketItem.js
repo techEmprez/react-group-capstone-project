@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { Button, Badge } from 'react-bootstrap';
 import { reserveRocket } from '../../redux/rockets/rocketSlice';
-import './Rocket.css';
 
 const RocketItem = (props) => {
   const { rocket } = props;
