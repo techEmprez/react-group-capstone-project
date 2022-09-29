@@ -5,7 +5,8 @@ import MissionInfo from './MissionInfo';
 
 const Missions = (props) => (
   <div>
-    <table className="mission-table">
+    <hr />
+    <table className="mission-table-head">
       <tbody>
         <tr className="table-head">
           <th className="missionName">{props.missionTitle}</th>
