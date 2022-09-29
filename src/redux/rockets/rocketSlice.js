@@ -39,3 +39,8 @@ export const rocketSlice = createSlice({
     [fetchRocketsData.fulfilled]: (_state, action) => action.payload,
   },
 });
+
+// Action creators are generated for each case reducer function
+export const { reserveRocket } = rocketSlice.actions;
+
+export default rocketSlice.reducer;
