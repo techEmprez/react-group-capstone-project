@@ -58,3 +58,14 @@ a {
   border-collapse: collapse;
   text-align: center;
 }
+
+/* styling for rockets */
+
+.rocket-img {
+  width: 250px;
+  height: 200px;
+}
+
+.reserved {
+  background-color: #18a2b8 !important;
+}
