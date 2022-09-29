@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 li {
@@ -44,6 +45,10 @@ a {
 .mission-table {
   border: 1px solid black;
   border-collapse: collapse;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 10px;
+  margin-left: 1px;
 }
 
 .table-head,
@@ -53,10 +58,45 @@ a {
   border-collapse: collapse;
 }
 
-.mission1 {
+.mission-data {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 140px;
+}
+
+.mission1Name,
+.missionName {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
+  width: 12%;
+}
+
+.missionDesc,
+.mission1Desc {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  width: 55%;
+}
+
+.missionStatus {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 18%;
+}
+
+.mission1Status {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 10%;
+}
+
+.mission1Btn {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  width: 7%;
 }
 
 /* styling for rockets */
