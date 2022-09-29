@@ -11,9 +11,7 @@ const NavLink = () => {
        <li>
        <Link to="/missions" >Missions</Link>
        </li>
-        <li>
-          <Link to="/rockets" >Missions</Link>
-        </li>
+       <li>|</li>
        <li>
        <Link to="/profile" >My Profile</Link>
        </li> 
