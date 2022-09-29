@@ -5,8 +5,8 @@
 import React, { useEffect } from 'react';
 import uuid from 'react-uuid';
 import { useSelector, useDispatch } from 'react-redux';
-import '../App.css';
-import { fetchMissionsList, joinMission } from '../redux/missions/mission';
+import '../../App.css';
+import { fetchMissionsList, joinMission } from '../../redux/missions/mission';
 
 const MissionInfo = (props) => {
   const { missionsList } = useSelector((state) => state.allMissions);
