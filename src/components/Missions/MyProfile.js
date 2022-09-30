@@ -12,11 +12,12 @@ const MyProfile = () => {
 
   return (
     <div className="my-profile">
-      { filterJoinedMissions.length === 0 ? <h4>You Have No Missions Added</h4> : <h4>Missions Joined</h4> }
-      <table>
+      <hr />
+      { filterJoinedMissions.length === 0 ? <h4 className="myMissions">You Have No Missions Added</h4> : <h4 className="myMissions">My Missions</h4> }
+      <table className="myMissionRow">
         <tbody>
           { filterJoinedMissions.map((mission) => (
-            <tr key={mission.mission_id}>{mission.mission_name}</tr>
+            <tr key={mission.mission_id}><td className="myMissionsList">{mission.mission_name}</td></tr>
           ))}
         </tbody>
       </table>
