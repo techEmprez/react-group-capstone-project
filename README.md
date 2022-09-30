@@ -32,6 +32,11 @@ The Missions section displays a list of current missions along with their brief 
 
 ![localhost 3000-SpaceTravelers'Hub(1)](https://user-images.githubusercontent.com/83514256/193158587-479909a4-2402-4aeb-9c57-ebe3acd61f13.png)
 
+# My Profile Page
+The My Profile section displays all reserved rockets and space missions.
+
+![localhost 3000-SpaceTravelers'Hub(2)](https://user-images.githubusercontent.com/83514256/193317548-f5efb2cd-2497-4e2d-b298-59a02d5c9ab9.png)
+
 ## Available Scripts
 After cloning this directory from Github;
 You can run:
