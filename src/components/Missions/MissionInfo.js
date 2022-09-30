@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-console */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import uuid from 'react-uuid';
@@ -18,12 +17,9 @@ const MissionInfo = (props) => {
     }
   }, []);
 
-  console.log(missionsList);
-
   const handleJoinMission = (event) => {
     event.preventDefault();
     dispatch(joinMission(event.target.parentElement.parentElement.id));
-    console.log('Mission Joined');
   };
 
   return (

@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { ListGroup, Container } from 'react-bootstrap';
@@ -7,7 +6,6 @@ const MyProfile = () => {
   const joinedMission = useSelector((state) => state.allMissions.missionsList);
   // eslint-disable-next-line max-len
   const filterJoinedMissions = joinedMission.filter((joinedMissionList) => joinedMissionList.isMissionJoined);
-  console.log(joinedMission);
 
   const rockets = useSelector((state) => state.rocket);
   const filteredRockets = rockets.filter((rocket) => rocket.reserved === true);
