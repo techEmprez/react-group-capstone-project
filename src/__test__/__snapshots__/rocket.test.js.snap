@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Header Component Test Header Component renders correctly 1`] = `
+<div
+  className="header"
+>
+  <img
+    alt="NavLogo"
+    className="navLogo"
+    src="capstone.png"
+  />
+  <h1
+    className="pageTitle"
+  >
+    Space Travelers' Hub
+  </h1>
+  <nav>
+    <ul
+      className="navBar"
+    >
+      <li
+        className="navItem"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li
+        className="navItem"
+      >
+        <a
+          href="/missions"
+          onClick={[Function]}
+        >
+          Missions
+        </a>
+      </li>
+      <li
+        className="navLine"
+      >
+        |
+      </li>
+      <li
+        className="navItem"
+      >
+        <a
+          href="/profile"
+          onClick={[Function]}
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Test Missions component Test Mission Component Renders Correctly 1`] = `
+<div
+  className="container"
+>
+  <ul />
+</div>
+`;
+
+exports[`Test Rockets component Test Mission Component Renders Correctly 1`] = `
+<div
+  className="container"
+>
+  <ul />
+</div>
+`;

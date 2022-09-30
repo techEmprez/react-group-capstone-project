@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  margin-top: 1rem;
+  color: gray;
+  width: 97%;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #07f;
+}
+
+.navItem:active {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+  flex-direction: row;
+}
+
+.navLogo {
+  height: 100px;
+  width: 100px;
+  margin-left: -10rem;
+  margin-top: 1rem;
+}
+
+.pageTitle {
+  margin-top: 2.5rem;
+  margin-left: -10rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.mission-table-head {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 95%;
+  height: 3rem;
+  text-align: left;
+  margin-left: 2%;
+  margin-top: 2rem;
+}
+
+.table-head {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.missionDataTable {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 95%;
+  height: 3rem;
+  margin-left: 2%;
+}
+
+.missionName {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 15%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.mission1Name {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 15%;
+  height: 8rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  vertical-align: top;
+}
+
+.missionDesc {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 60%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mission1Desc {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 60%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.mission1Status {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.status2 {
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: grey;
+  color: white;
+  font-weight: 900;
+  margin-left: 1rem;
+  text-align: center;
+  width: 80%;
+  height: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.status1 {
+  border: 2px solid #119fb5;
+  border-radius: 10px;
+  background-color: #119fb5;
+  color: white;
+  font-weight: 900;
+  margin-left: 1rem;
+  text-align: center;
+  width: 80%;
+  height: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.joinBtn {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 2rem;
+  background: none;
+  height: 35px;
+  width: 70%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.leaveBtn {
+  border: 2px solid red;
+  border-radius: 4px;
+  margin-left: 2rem;
+  background: none;
+  height: 35px;
+  width: 70%;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.missionDataTable:nth-child(odd) {
+  background-color: gainsboro;
+}
+
+.myMissions {
+  margin-top: 2.5rem;
+  margin-left: 3.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+}
+
+.myMissionRow {
+  margin-left: 3.5rem;
+  margin-top: 0.85rem;
+}
+
+.myMissionsList {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+  width: 25%;
+  font-size: 20px;
+  text-align: left;
+}
+
+.w-25 {
+  margin-left: 200px;
+}
+
+.me-5 {
+  margin-left: -150px;
+}
+
+/* styling for rockets */
+
+.rocket-img {
+  width: 250px;
+  height: 200px;
+}
+
+.reserved {
+  background-color: #18a2b8 !important;
+}
+
+@media (max-width: 1452px) {
+  .status2 {
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    font-weight: 900;
+    margin-left: 1rem;
+    text-align: center;
+    width: 80%;
+    height: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .status1 {
+    border: 2px solid #119fb5;
+    border-radius: 10px;
+    background-color: #119fb5;
+    color: white;
+    font-weight: 900;
+    margin-left: 1rem;
+    text-align: center;
+    width: 80%;
+    height: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .joinBtn {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 2rem;
+    background: none;
+    height: 3.5rem;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+  }
+
+  .leaveBtn {
+    border: 2px solid red;
+    border-radius: 4px;
+    margin-left: 2rem;
+    background: none;
+    height: 3.5rem;
+    width: 70%;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+  }
+}
