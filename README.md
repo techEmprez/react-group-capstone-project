@@ -22,6 +22,10 @@ In this task, we worked with real live data from the SpaceX API. The task is to 
 <li>Browser With Developer Tools</li>
 </ul>
 
+## Interested in viewing the webpage:
+
+[Live Demo](https://rocket-mission-bookings.netlify.app/)
+
 # Rockets Page
 The Rockets section displays a list of all available SpaceX rockets.
 
