@@ -65,6 +65,8 @@ You can run:
 # Run Tests
 Use `npm test a`  to run all the Jest test.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 # Authors  	:bookmark_tabs:
 
 <ul>
