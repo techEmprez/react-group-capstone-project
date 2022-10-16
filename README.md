@@ -2,7 +2,7 @@
 
 ## Description
 
-In this task, we worked with real live data from the SpaceX API. The task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+In this task, we worked with real-time data from the SpaceX API. The task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 # Built with
 <ul>
